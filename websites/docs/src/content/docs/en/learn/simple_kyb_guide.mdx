@@ -149,7 +149,7 @@ This definition is based on the XState library.
 
 To create a new workflow instance, execute the following `curl` command:
 
-<CodeBlock lang={`shell`} code={`curl -X POST --location 'http://localhost:3000/api/v1/external/workflows/run' \
+<CodeBlock lang={`shell`} code={`curl -X POST --location 'https://be-demo-ekyc.namtp.id.vn/api/v1/external/workflows/run' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer secret' \
 --data '{
@@ -227,7 +227,7 @@ An example of the response:
 To initiate the workflow, send the `start` event.
 This action triggers the data enrichment process.
 
-<CodeBlock lang={`shell`} code={`curl -X POST 'http://localhost:3000/api/v1/external/workflows/[WORKFLOW RUNTIME ID HERE]/send-event' \
+<CodeBlock lang={`shell`} code={`curl -X POST 'https://be-demo-ekyc.namtp.id.vn/api/v1/external/workflows/[WORKFLOW RUNTIME ID HERE]/send-event' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer secret' \
 --data '{"name": "start"}'`}/>

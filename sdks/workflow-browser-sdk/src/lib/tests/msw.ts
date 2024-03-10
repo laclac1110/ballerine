@@ -37,7 +37,7 @@ const handler: ResponseResolver<
 
 const restHandlers = [
   rest.patch(`${backendOptions.baseUrl}${backendOptions.endpoints.persist.endpoint}`, handler),
-  rest.post('http://localhost:3000/test', handler),
+  rest.post('https://be-demo-ekyc.namtp.id.vn/test', handler),
   // Error on all other requests
   rest.all('*', async (req, res, ctx) => {
     await sleep(Math.round(Math.random() * 300));

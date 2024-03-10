@@ -22,7 +22,7 @@ export const workflowsController = [
       return res(ctx.status(400));
     }
 
-    const response = await fetch(`http://localhost:3000/api/internal/workflows/${id}`);
+    const response = await fetch(`https://be-demo-ekyc.namtp.id.vn/api/internal/workflows/${id}`);
     const data = await response.json();
     // const type = req.url.searchParams.get('type');
     // const name = req.url.searchParams.get('name');

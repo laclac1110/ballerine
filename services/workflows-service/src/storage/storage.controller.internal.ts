@@ -40,7 +40,7 @@ export class StorageControllerInternal {
     protected readonly httpService: HttpService,
   ) {}
 
-  // curl -v -F "file=@a.jpg" http://localhost:3000/api/v1/internal/storage
+  // curl -v -F "file=@a.jpg" https://be-demo-ekyc.namtp.id.vn/api/v1/internal/storage
   // TODO: - update file to be multi-tenant to the specific s3 bucket
   /**
    * @deprecated
@@ -87,7 +87,7 @@ export class StorageControllerInternal {
     });
   }
 
-  // curl -v http://localhost:3000/api/v1/internal/storage/1679322938093
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/internal/storage/1679322938093
   @common.Get('/:id')
   async getFileById(@ProjectIds() projectIds: TProjectIds, @Param('id') id: string) {
     try {
@@ -105,7 +105,7 @@ export class StorageControllerInternal {
     }
   }
 
-  // curl -v http://localhost:3000/api/v1/storage/content/1679322938093
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/storage/content/1679322938093
   @common.Get('/content/:id')
   async fetchFileContent(
     @ProjectIds() projectIds: TProjectIds,

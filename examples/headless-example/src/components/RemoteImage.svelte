@@ -25,7 +25,7 @@
     return fileInfo.uri.includes('https') && !fileInfo.fileNameInBucket;
   };
   const fetchFileInfoById = async (id: string) => {
-    const data = await fetchJson(`http://localhost:3000/api/v1/external/storage/${id}`);
+    const data = await fetchJson(`https://be-demo-ekyc.namtp.id.vn/api/v1/external/storage/${id}`);
 
     return z
       .object({
@@ -35,7 +35,7 @@
       .parse(data);
   };
   const fetchFileContentById = async (id: string) => {
-    const data = await fetchBlob(`http://localhost:3000/api/v1/external/storage/content/${id}`);
+    const data = await fetchBlob(`https://be-demo-ekyc.namtp.id.vn/api/v1/external/storage/content/${id}`);
 
     return z.instanceof(Blob).transform(blobToBase64).parseAsync(data);
   };

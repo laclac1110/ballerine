@@ -36,7 +36,7 @@ export class CollectionFlowFilesController {
     protected readonly collectionFlowService: CollectionFlowService,
   ) {}
 
-  // curl -v -F "file=@/<path>/a.jpg" http://localhost:3000/api/v1/collection-flow/files
+  // curl -v -F "file=@/<path>/a.jpg" https://be-demo-ekyc.namtp.id.vn/api/v1/collection-flow/files
   @UseInterceptors(
     FileInterceptor('file', {
       storage: getDiskStorage(),

@@ -265,7 +265,7 @@ export class WorkflowControllerExternal {
     );
   }
 
-  // curl -X GET -H "Content-Type: application/json" http://localhost:3000/api/v1/external/workflows/:id/context
+  // curl -X GET -H "Content-Type: application/json" https://be-demo-ekyc.namtp.id.vn/api/v1/external/workflows/:id/context
   @common.Get('/:id/context')
   @UseCustomerAuthGuard()
   @swagger.ApiOkResponse()

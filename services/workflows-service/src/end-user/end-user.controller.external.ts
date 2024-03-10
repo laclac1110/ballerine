@@ -117,7 +117,7 @@ export class EndUserControllerExternal {
     }
   }
 
-  // curl -v http://localhost:3000/api/v1/external/end-users/:endUserId/workflows
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/external/end-users/:endUserId/workflows
   @common.Get('/:endUserId/workflows')
   @swagger.ApiOkResponse({ type: [WorkflowDefinitionModel] })
   @swagger.ApiForbiddenResponse({ type: errors.ForbiddenException })

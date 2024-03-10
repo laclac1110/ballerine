@@ -22,7 +22,7 @@ const defaultFlowOrder = [
 
 export const configuration: IAppConfiguration = {
   backendConfig: {
-    baseUrl: 'http://localhost:3000/api/v1',
+    baseUrl: 'https://be-demo-ekyc.namtp.id.vn/api/v1',
     auth: {
       method: 'basic',
       authorizationHeader: `Bearer 12345678-1234-1234-1234-123456789012`,

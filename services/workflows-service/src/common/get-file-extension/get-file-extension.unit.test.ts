@@ -8,7 +8,7 @@ describe('getFileExtension', () => {
 
       // Act
       // eslint-disable-next-line prefer-const
-      extension = getFileExtension('http://localhost:3000/test.pdf?test=true');
+      extension = getFileExtension('https://be-demo-ekyc.namtp.id.vn/test.pdf?test=true');
 
       // Assert
       expect(extension).toBe('pdf');

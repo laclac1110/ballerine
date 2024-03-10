@@ -5,7 +5,7 @@ export type WorkServiceEndpoints = {
   base: string;
 };
 export class BallerineBackOfficeService {
-  constructor(private readonly baseUrl: string = 'http://localhost:3000/api/v1/external') {}
+  constructor(private readonly baseUrl: string = 'https://be-demo-ekyc.namtp.id.vn/api/v1/external') {}
 
   fetchEndUser = async (id: string) => fetchJson(`${this.baseUrl}/end-users/${id}`);
   fetchBusiness = async (id: string) => fetchJson(`${this.baseUrl}/businesses/${id}`);

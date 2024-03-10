@@ -34,7 +34,7 @@ cd ballerine && pnpm install
 ```bash
 pnpm dev
 ```
-4. Open the page in your [browser](http://localhost:3000/)
+4. Open the page in your [browser](https://be-demo-ekyc.namtp.id.vn/)
 
 ## Project structure
 

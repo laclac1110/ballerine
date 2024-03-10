@@ -127,7 +127,7 @@ export class BusinessControllerExternal {
     });
   }
 
-  // curl -v http://localhost:3000/api/v1/external/businesses/:businessId/workflows
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/external/businesses/:businessId/workflows
   @common.Get('/:businessId/workflows')
   @swagger.ApiOkResponse({ type: [WorkflowDefinitionModel] })
   @swagger.ApiForbiddenResponse({ type: errors.ForbiddenException })

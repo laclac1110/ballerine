@@ -60,7 +60,7 @@ export const makeWorkflow = (data: {
       state: workflowRuntimeData?.state ?? definition?.initial,
     },
     backend: {
-      baseUrl: 'http://localhost:3000/api/v1/external',
+      baseUrl: 'https://be-demo-ekyc.namtp.id.vn/api/v1/external',
       headers: {
         Authorization:
           import.meta.env.MODE === 'development'

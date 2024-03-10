@@ -284,7 +284,7 @@ export class WorkflowControllerInternal {
   }
 
   // PATCH /workflows/assign/:id
-  // curl -X PATCH http://localhost:3000/api/v1/internal/workflows/assign/:workflowId \
+  // curl -X PATCH https://be-demo-ekyc.namtp.id.vn/api/v1/internal/workflows/assign/:workflowId \
   // -H 'Content-Type: application/json' \
   // -H 'Cookie: session=[SESSION]; session.sig=[SESSION_SIG]' \
   // -d '{"assigneeId": "[ASSIGNEE_ID]"}'

@@ -78,7 +78,7 @@ export class StorageControllerExternal {
     });
   }
 
-  // curl -v http://localhost:3000/api/v1/storage/1679322938093
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/storage/1679322938093
   @common.Get('/:id')
   @UseCustomerAuthGuard()
   async getFileById(
@@ -102,7 +102,7 @@ export class StorageControllerExternal {
     return res.send(persistedFile);
   }
 
-  // curl -v http://localhost:3000/api/v1/storage/content/1679322938093
+  // curl -v https://be-demo-ekyc.namtp.id.vn/api/v1/storage/content/1679322938093
   @common.Get('/content/:id')
   @UseCustomerAuthGuard()
   async fetchFileContent(
